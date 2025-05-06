@@ -13,10 +13,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body{
+  overflow: hidden;
+}
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 
@@ -28,6 +32,8 @@ display: relative;
 
 .imgContainer{
   display: flex;
+  flex-direction: column;
+  max-height: 100vh;
 }
 .bgImage{
  width: 100%;
@@ -204,12 +210,15 @@ footer button:hover{
     position: fixed;
     inset: unset;
     min-width: 30%;
+    height: 100vh;
     box-shadow: 0 0 40px 1px #030615;
     right: 0;
   }
 
   .sidebarContents{
-    margin: unset
+    margin: unset;
+    width: 100%;
+    overflow: hidden;
   }
 }
 
