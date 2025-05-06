@@ -149,12 +149,13 @@ footer button:hover{
 .descriptionContainer{
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1.5rem;
 
 }
 .descriptionTitle{
  font-size: 1.1rem;
  font-weight: 100; 
+ z-index: 10;
 }
 
 
@@ -222,7 +223,13 @@ footer button:hover{
   }
 }
 
-
+@media(max-width: 400px){
+  .descriptionTitle{
+   background-color: #030615;
+   font-size: 22px;
+   z-index: 500;
+  }
+}
 
 
 
